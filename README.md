@@ -52,7 +52,7 @@ There are several configuration settings supported:
 | `exe`                 | No       | The name of your app's main `.exe` file. This uses the `name` field in your app's package.json file with an added `.exe` extension when unspecified. |
 | `setupExe`            | No       | The name of the final setup .exe file. By default it's `<ProductName>Setup.exe`. |
 | `description`         | No       | The description value for the nuget package metadata. Defaults to the `description` field from your app's package.json file when unspecified. |
-| `iconUrl`             | No       | An URL to a .ico/.png icon for the nuget package metadata. |
+| `iconUrl`             | No       | A URL to an ICO file to use as the application icon (displayed in Control Panel > Programs and Features). Defaults to the Atom icon. |
 | `version`             | No       | The version value for the nuget package metadata. Defaults to the `version` field from your app's package.json file when unspecified. |
 | `title`               | No       | The title value for the nuget package metadata. Defaults to the `productName` field and then the `name` field from your app's package.json file when unspecified. |
 | `certificateFile`     | No       | The path to an Authenticode Code Signing Certificate |

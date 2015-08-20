@@ -21,7 +21,6 @@ describe 'create-windows-installer task', ->
       interval = setInterval ->
         if fs.existsSync('./build/ElectronSetup.exe')
           clearInterval interval
-          assert.equal true, fs.existsSync('./test/fixtures/app/Update.exe')
           assert.equal true, fs.existsSync('./build/electron-1.0.0-full.nupkg')
           assert.equal true, fs.existsSync('./build/ElectronSetup.exe')
           resolve()
