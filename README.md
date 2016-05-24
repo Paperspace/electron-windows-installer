@@ -60,6 +60,7 @@ There are several configuration settings supported:
 | `signWithParams`      | No       | Params to pass to signtool.  Overrides `certificateFile` and `certificatePassword`. |
 | `setupIcon`           | No       | The ICO file to use as the icon for the generated Setup.exe |
 | `remoteReleases`      | No       | A URL to your existing updates. If given, these will be downloaded to create delta updates |
+| `addlDirs`            | No       | Array of additional directories to include in the package. The nuspec src path will match the pattern `{dir name}/**`. |
 
 ## Sign your installer or else bad things will happen
 

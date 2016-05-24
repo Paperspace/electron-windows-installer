@@ -19,5 +19,8 @@
     <file src="icudtl.dat" target="lib\net45\icudtl.dat" />
     <file src="LICENSE" target="lib\net45\LICENSE" />
     <file src="{{= it.exe }}" target="lib\net45\{{= it.exe }}" />
+    {{~ it.addlDirs :d }}
+      <file src="{{= d }}\**" target="lib\net45\{{= d }}" />
+    {{~}}
   </files>
 </package>

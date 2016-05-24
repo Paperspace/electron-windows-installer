@@ -29,6 +29,7 @@ class InstallerFactory
     @signWithParams = opts.signWithParams
     @setupIcon = opts.setupIcon
     @remoteReleases = opts.remoteReleases && opts.remoteReleases.replace('.git', '')
+    @addlDirs = opts.addlDirs || []
 
     unless @authors
       throw new Error 'Authors required: set "authors" in options or "author" in package.json'
